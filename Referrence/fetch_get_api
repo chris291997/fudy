@@ -1,0 +1,9 @@
+ // fetch('http://192.168.1.14/dev_tech/admin/index.php/store_management/loadstoredata?store_code=DGS-123456')
+    //   .then((response) => response.json())
+    //   .then((json) => {
+    //     console.log(json.store_category);
+    //     return json.store_category;
+    //   })
+    //   .catch((error) => {
+    //     console.error(error);
+    //   });

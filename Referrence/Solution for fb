@@ -1,0 +1,6 @@
+
+Solution ---> change if release or debug
+
+keytool  -printcert -jarfile E:\react_native\FudsV1\android\app\build\outputs\apk\debug\app-debug.apk
+
+Hex to Base64

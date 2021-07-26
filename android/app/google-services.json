@@ -1,0 +1,188 @@
+{
+  "project_info": {
+    "project_number": "263716480950",
+    "firebase_url": "https://fuds-bicol-default-rtdb.firebaseio.com",
+    "project_id": "fuds-bicol",
+    "storage_bucket": "fuds-bicol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263716480950:android:e510e8944923a09d154317",
+        "android_client_info": {
+          "package_name": "com.chatappfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263716480950-b4d126jbngivksk37ntnk8bjleumo7ih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chatappfirebase",
+            "certificate_hash": "c6180a75883dbce0d0b8fc2d3e45871c422b71e7"
+          }
+        },
+        {
+          "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTvwGu_nqW0ncXnx4UZh2rFPJMKR76qUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263716480950:android:32fe61720cb92318154317",
+        "android_client_info": {
+          "package_name": "com.fudsv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263716480950-dulhksh9j0fnkrrj7q5ad7ueiu6btihu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fudsv1",
+            "certificate_hash": "c6180a75883dbce0d0b8fc2d3e45871c422b71e7"
+          }
+        },
+        {
+          "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTvwGu_nqW0ncXnx4UZh2rFPJMKR76qUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263716480950:android:03d3c45e508095ed154317",
+        "android_client_info": {
+          "package_name": "com.pushnotif"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTvwGu_nqW0ncXnx4UZh2rFPJMKR76qUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263716480950:android:fab17eb86123cfc8154317",
+        "android_client_info": {
+          "package_name": "com.recipesharingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263716480950-g9u2bdps1cb9h1p1il8l8mr7d19pi2nr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recipesharingapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTvwGu_nqW0ncXnx4UZh2rFPJMKR76qUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263716480950:android:197085aebd134048154317",
+        "android_client_info": {
+          "package_name": "com.riderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263716480950-2h5a7833tspth32rk53m4ka5vgmjvg8q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.riderapp",
+            "certificate_hash": "c6180a75883dbce0d0b8fc2d3e45871c422b71e7"
+          }
+        },
+        {
+          "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTvwGu_nqW0ncXnx4UZh2rFPJMKR76qUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263716480950-bbdvd2a3fo2vro5bgls5camfc9rdrdh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

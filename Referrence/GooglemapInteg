@@ -1,0 +1,11 @@
+https://stackoverflow.com/questions/46590698/how-to-use-google-reverse-geocoding-with-react-native-expo
+
+sample code:
+fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + myLat + ',' + myLon + '&key=' + AIzaSyBOrInGMyw4FH8NdrBGYdKmLzpMpucTSWs)
+        .then((response) => response.json())
+        .then((responseJson) => {
+            console.log('ADDRESS GEOCODE is BACK!! => ' + JSON.stringify(responseJson));
+})
+
+
+ 13.1533181,123.7415786

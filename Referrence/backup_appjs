@@ -1,0 +1,128 @@
+import React from 'react';
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from '@react-navigation/native';
+
+import { View, Text } from 'react-native'
+import { Home, Register, AllStore, ProductDetails, SearchProduct, WebViewData, CartPage, Checkout } from './screens';
+import Tabs from './navigation/tabs'
+import Onboarding from './screens/OnboardScreen';
+import { useEffect, useState } from "react";
+
+import { openDatabase } from 'react-native-sqlite-storage';
+import { set } from 'react-native-reanimated';
+
+
+
+var db = openDatabase({ name: 'ordering.db' });
+
+// import { SearchFood,  CartPage, CheckOutPage } from './screens/'
+// import Tabs from './navigation/tabs'
+// import DetailsScreen from './screens/DetailsScreen';
+const Stack = createStackNavigator();
+
+const App = () => {
+  let [dataRow, setDataRow] = useState(0)
+
+
+  useEffect(() => {
+    db.transaction(function (txn) {
+      txn.executeSql(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='subs_tbl'",
+        [],
+        function (tx, res) {
+          console.log('item:', res.rows.length);
+          console.log('Drop ang table subs');
+          if (res.rows.length == 0) {
+
+            txn.executeSql('DROP TABLE IF EXISTS subs_tbl', []);
+            txn.executeSql(
+              'CREATE TABLE IF NOT EXISTS subs_tbl(subid INTEGER PRIMARY KEY AUTOINCREMENT, device_info VARCHAR(255), storeCode VARCHAR(255))',
+              []
+            );
+          }
+        }
+      );
+    });
+
+
+    db.transaction((tx) => {
+      tx.executeSql('SELECT * FROM subs_tbl', [], (tx, results) => {
+
+        var len = results.rows.length;
+
+
+        if (len > 0) {
+
+          console.log(len)
+          setDataRow(1);
+
+          // setDataRow(1);
+        } else {
+          console.log('Pede na mag insert ')
+          setDataRow(0);
+        }
+
+    
+
+      });
+    });
+
+
+
+
+  }, []);
+
+
+  
+
+
+  return (
+
+    <NavigationContainer>
+
+
+      {dataRow == 1 ? (
+        <Stack.Navigator
+        screenOptions={{
+          headerShown: false
+        }}>
+    <Stack.Screen name="Home" component={Tabs} />
+    <Stack.Screen name="AllStore" component={AllStore} />
+    <Stack.Screen name="ProductDetails" component={ProductDetails} />
+    <Stack.Screen name="SearchProduct" component={SearchProduct} />
+    <Stack.Screen name="WebViewData" component={WebViewData} />
+    <Stack.Screen name="CartPage" component={CartPage} />
+    <Stack.Screen name="Checkout" component={Checkout} />
+    </Stack.Navigator>
+     
+      ) :
+        (
+  
+          <Stack.Navigator
+  screenOptions={{
+    headerShown: false
+  }}>
+  <Stack.Screen name="Onboarding" component={Onboarding} />
+  <Stack.Screen name="Register" component={Register} />
+  {/* <Stack.Screen name="Home" component={Tabs} />
+<Stack.Screen name="AllStore" component={AllStore} /> */}
+<Stack.Screen name="Home" component={Tabs} />
+<Stack.Screen name="AllStore" component={AllStore} />
+<Stack.Screen name="ProductDetails" component={ProductDetails} />
+<Stack.Screen name="SearchProduct" component={SearchProduct} />
+<Stack.Screen name="WebViewData" component={WebViewData} />
+<Stack.Screen name="CartPage" component={CartPage} />
+<Stack.Screen name="Checkout" component={Checkout} />
+</Stack.Navigator>
+          
+        )
+      }
+
+
+
+    </NavigationContainer>
+
+  );
+}
+
+export default App;
